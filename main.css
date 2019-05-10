@@ -1,0 +1,86 @@
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-size: cover;
+  background: url("tilted.webp");
+  color: white;
+}
+
+
+h1 {
+  font-style: italic;
+  color: yellow;
+}
+
+a {
+    color:#FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+input {
+  transition: background-color 0.5s ease;
+ background:rgba(255,255,255,0.1);
+ color: white;
+ border-radius: 10px;
+ width: 100%;
+ padding: 5px;
+font-size: 2.5vw;
+}
+select:focus {
+ outline: none; 
+}
+input:focus {
+ background:rgba(0,0,0,0.5);
+  outline: none;
+}
+button {
+ font-size: 5vw;
+ padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #23272A;
+  border: none;
+  transition: border-radius 0.5s ease;
+  border-radius: 15px;
+  box-shadow: 0 9px #99AAB5;
+}
+button:active {
+  box-shadow: 0 5px #99AAB5;
+  transform: translateY(4px);
+}
+
+button:hover {
+ border-radius: 25px; 
+}
+button:focus {
+ border-radius: 25px; 
+}
+select {
+  font-size: 2.5vw;
+ transition: background-color 0.5s ease;
+ background:rgba(255,255,255,0.1);
+ color: white;
+ border-radius: 10px;
+ width: 100%;
+ padding: 5px;
+}
+
+
+select:focus {
+  background:rgba(0,0,0,0.5);
+}
+option {
+ color: white;
+  background-color: black;
+}
+footer {
+ position:fixed;
+ bottom:0;
+}
