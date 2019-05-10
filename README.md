@@ -1,4 +1,4 @@
-# Free V-Bucks?
+# JACK MADE FREE VBUCK HACK?!?!?!?!!11oneone
 
 Of course not! This is meant as a fun prank (If you think gnoming your friends is a "prank")
 
