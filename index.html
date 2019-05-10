@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>V-Bucks Generator</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Get free V-bucks!">
+    <meta property="og:title" content="V-Bucks Generator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Get free V-bucks!">
+    <meta property="og:image" content="https://gamepedia.cursecdn.com/fortnite_gamepedia/f/f3/V-bucks_icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="https://gamepedia.cursecdn.com/fortnite_gamepedia/f/f3/V-bucks_icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <style>
+      /* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  background-size: cover;
+  background: url("https://cdn.glitch.com/9c5d3649-049a-4f32-868d-9fac3f6d4446%2F9c5d3649-049a-4f32-868d-9fac3f6d4446_Neo%20Tilted.webp?1557496903977");
+  color: white;
+}
+
+
+h1 {
+  font-style: italic;
+  color: yellow;
+}
+
+a {
+    color:#FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+input {
+  transition: background-color 0.5s ease;
+ background:rgba(255,255,255,0.1);
+ color: white;
+ border-radius: 10px;
+ width: 100%;
+ padding: 5px;
+font-size: 2.5vw;
+}
+select:focus {
+ outline: none; 
+}
+input:focus {
+ background:rgba(0,0,0,0.5);
+  outline: none;
+}
+button {
+ font-size: 5vw;
+ padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #23272A;
+  border: none;
+  transition: border-radius 0.5s ease;
+  border-radius: 15px;
+  box-shadow: 0 9px #99AAB5;
+}
+button:active {
+  box-shadow: 0 5px #99AAB5;
+  transform: translateY(4px);
+}
+
+button:hover {
+ border-radius: 25px; 
+}
+button:focus {
+ border-radius: 25px; 
+}
+select {
+  font-size: 2.5vw;
+ transition: background-color 0.5s ease;
+ background:rgba(255,255,255,0.1);
+ color: white;
+ border-radius: 10px;
+ width: 100%;
+ padding: 5px;
+}
+
+
+select:focus {
+  background:rgba(0,0,0,0.5);
+}
+option {
+ color: white;
+  background-color: black;
+}
+footer {
+ position:fixed;
+ bottom:0;
+}
+    </style>
+    
+    <!-- import the webpage's javascript file -->
+    <script>
+      /* If you're feeling fancy you can add interactivity 
+    to your site with Javascript */
+var v = document.getElementById("count"); // The V-Bucks count
+var u = document.getElementById("user"); // The username input
+// Submit code
+function submit() {
+if (v.value == "" || u.value == "") { // If either of the values aren't filled
+    swal({ // Show an alert to the user
+  title: "Oops!",
+  text: "Fill in the username and V-Bucks count.",
+  icon: "error",
+});
+    } else if (v.value.includes("-") || parseInt(v.value) === 0) { // If the V-Bucks number is negative
+          swal({ // Show an alert to the user
+  title: "Oops!",
+  text: "Use a postive number for the V-Bucks count.",
+  icon: "error",
+});
+    } else { // When the user types in the info, gnome them.
+      window.location.href = "https://www.youtube.com/embed/6n3pFFPSlW4?autoplay=1&controls=0"; // Autoplaying YT embed link without controls
+    }
+}
+    </script>
+    
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>  
+  <body>
+    <h1>Free V-Bucks!</h1>
+    
+    <p>
+      Type in your username, platform, and amount of V-Bucks.
+    </p>
+    <noscript>
+      <p>
+        Sorry, but your browser doesn't have JavaScript support.
+        <br>
+        You can't get Free V-Bucks today.
+      </p>
+    </noscript>
+    <input type="text" id="user" aria-label="Username" style="border:none" placeholder="Username" autofocus>
+    <select id="platform" aria-label="Platform" style="border:none; margin-top: 10px;">
+<option>PC</option>
+<option>PS4</option>
+<option>Mobile</option>
+<option>Xbox</option>
+</select>
+    <input aria-label="V-Bucks Count" style="border:none; margin-top: 10px;" id="count" type="number" min="1" value="1" placeholder="V-Bucks count" >
+<div style="text-align:center;">
+    <button onclick="submit();" style="border: none; margin-top: 10px; " >Get your V-Bucks!</button>
+</div>
+<footer><a href="//j.mp/g_h">
+  This is a parody by Jack5079.
+  </a></footer>
+
+    <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+  </body>
+</html>
