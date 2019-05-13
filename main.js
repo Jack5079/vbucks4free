@@ -8,7 +8,7 @@ function submit() {
             text: "Fill in the username and V-Bucks count.",
             icon: "error",
         });
-    } else if (parseInt(v.value) =< 0) { // If the V-Bucks number is negative
+    } else if (parseInt(v.value) <= 0) { // If the V-Bucks number is negative
         swal({ // Show an alert to the user
             title: "Oops!",
             text: "Use a postive number for the V-Bucks count.",
