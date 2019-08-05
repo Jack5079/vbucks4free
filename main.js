@@ -1,4 +1,6 @@
 /* global swal */
+let id = '5t53TcKIlMc' // This is the YT Video id.
+
 var v = document.getElementById('count') // The V-Bucks count
 var u = document.getElementById('user') // The username input
 // Submit code
@@ -16,6 +18,6 @@ document.querySelector('button').addEventListener('click', function () {
       icon: 'error'
     })
   } else { // When the user types in the info, gnome them.
-    window.location.href = 'https://www.youtube.com/embed/6n3pFFPSlW4?autoplay=1&controls=0' // Autoplaying YT embed link without controls
+    window.location.href = `https://www.youtube.com/embed/${id}?autoplay=1&controls=0` // Autoplaying YT embed link without controls
   }
 })
