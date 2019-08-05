@@ -81,7 +81,7 @@ option {
  color: white;
   background-color: black;
 }
-footer {
+small {
  position:fixed;
  bottom:0;
 }
