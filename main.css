@@ -5,8 +5,6 @@ body {
   background: url("tilted.webp");
   color: white;
    background-size: cover;
-   -moz-background-size: cover;  /* Firefox 3.6 */
-   background-position: center;  /* Internet Explorer 7/8 */
 }
 
 
