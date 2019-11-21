@@ -28,6 +28,6 @@ document.querySelector( 'button' ).addEventListener( 'click', function () {
       icon: 'error'
     } )
   } else { // When the user types in the info, gnome them.
-    window.location.href = `https://www.youtube.com/embed/${ id }?autoplay=1&controls=0` // Autoplaying YT embed link without controls
+    window.location.href = `https://invidio.us/latest_version?id=${ id }&itag=22` // Autoplaying YT embed link without controls
   }
 } )
