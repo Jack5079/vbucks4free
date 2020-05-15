@@ -16,18 +16,18 @@ var u = document.getElementById( 'user' ) // The username input
 // Submit code
 document.querySelector( 'button' ).addEventListener( 'click', function () {
   if ( v.value === '' || u.value === '' ) { // If either of the values aren't filled
-    swal( { // Show an alert to the user
+    return swal( { // Show an alert to the user
       title: 'tf...',
       text: 'fill in the form retard',
       icon: 'error'
     } )
-  } else if ( parseInt( v.value ) <= 0 ) { // If the V-Bucks number is negative
-    swal( { // Show an alert to the user
+  } 
+  if ( parseInt( v.value ) <= 0 ) { // If the V-Bucks number is negative
+    return swal( { // Show an alert to the user
       title: 'Oops!',
       text: 'we can\'t take away vbucks \n this isn\'t funny if you are taking away someone else\'s vbucks',
       icon: 'error'
     } )
-  } else { // When the user types in the info, gnome them.
-    window.location.href = `https://invidio.us/watch?v=${ id }&autoplay=1` // Autoplaying YT embed link without controls
   }
+    window.location.href = `https://invidio.us/watch?v=${ id }&autoplay=1` // Autoplaying YT embed link without controls
 } )
